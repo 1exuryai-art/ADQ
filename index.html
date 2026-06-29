@@ -3,6 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <title>Мой мини сайт</title>
+  <style>
+    body{
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background: #f0f4ff;
+      color: #1e293b;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -12,8 +20,25 @@
       <a href="#plan">План</a>
     </nav>
   </header>
+   <main>
+    <section>
+      <form action="/send" method="post">
+        <label>
+          Имя:
+          <input type="text" name="name">
+        </label>
 
-  <main>
+        <label>
+          Email:
+          <input type="email" name="email">
+        </label>
+
+        <button type="submit">Отправить</button>
+
+      </form>
+
+    </section>
+    
     <section id="about">
       <h2>Обо мне</h2>
       <p>Пробую <strong>ВЕБ</strong></p>
@@ -34,4 +59,3 @@
   </footer>
 </body>
 </html>
-
