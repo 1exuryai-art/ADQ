@@ -124,27 +124,45 @@
     }
 
     table {
-      widht: 100%;
+      width: 100%;
       border-collapse: collapse;
       margin-top: 12px;
     }
 
-    th, td:hover {
+    th {
+      border: 3px solid #cbd5e1;
+      padding: 10px 14px;
+      text-align: left;
+      transition: 0.3s ease;
+      transform: scale(1.1);
+      
+    td {
       border: 1px solid #cbd5e1;
       padding: 10px 14px;
       text-align: left;
-      transform: translateY(-3px) scale(0.2);
-    }
-
-    th {
-      background: #2563eb;
-      color: white;
       transition: 0.3s ease;
+      transform: scale(1.1);
+    }
+      
+    td:hover {
+      background: #2563eb;
+      color: green;
+      text-align: left;
+      transition: 0.3s ease;
+      transform: scale(1.1);
+    }
+      
+
+    th:hover {
+      background: #2563eb;
+      color: pink;
+      text-align: left;
+      transition: 0.3s ease;
+      transform: scale(1.1);
     }
 
     tr:nth-child(even) {
       background: #f8fafc;
-      transition: 0.3s ease;
     }
       
   
