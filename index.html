@@ -73,11 +73,18 @@
 
     form button {
       padding: 10px 24px;
-      color: blue;
-      border-radius: 999px;
-      border: 1px solid rgba(148, 163, 184, 0.2);
-      align-items: center;
-      margin: 10px;
+      background: #2563eb;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;   /*это тоже тестануть*/
+      margin-top: 12px:  /*потом потестить что это*/
+    }
+
+    form button:hover {
+      background: #7c3aed;
+      transform: translateY(-2px); /*от чего зависит?*/
+      box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
     }
 
     form label {
